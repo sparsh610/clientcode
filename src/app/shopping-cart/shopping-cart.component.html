@@ -1,0 +1,79 @@
+<body>
+
+  <div>
+    <mat-toolbar color="primary">
+
+ Mobile Cart
+    </mat-toolbar>
+</div>
+<div id="cart">
+  <span style="float: right; margin-right: 20px;"  [matTooltip]="tooltip" [matTooltipPosition]="below" [matBadge] = "matBadgeNumber" matBadgePosition="above after" [matBadgeHidden]="hiddenBadge()">Cart</span>
+
+</div>
+
+    <div class="container">
+    <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone.png"></div>
+      <div><button mat-stroked-button (click)="onClick()">Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone1.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone2.jpg"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone3.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone4.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone5.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone6.jpg"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone7.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone8.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone9.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone10.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div class="container-list">
+      <div>
+      <img src="..\assets\img\smartphone11.png"></div>
+      <div><button mat-stroked-button>Add</button></div>
+     </div>
+     <div *ngIf="!hiddenBadge()" class="container-list"><button [routerLink]="['order']" color=primary mat-fab (click)="buyNow()">Buy Now</button></div>
+     <div *ngIf="!hiddenBadge()" class="container-list"><button color=primary mat-fab (click)="clearCart()">Clear Cart</button></div>
+  </div>
+
+</body>

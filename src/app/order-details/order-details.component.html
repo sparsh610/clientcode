@@ -1,0 +1,85 @@
+<body>
+<div>
+  <mat-horizontal-stepper>
+
+      <mat-step label="Shipping Address">
+        <div>
+          <div class="mat-display-1">you have {{productNumber|async}} product</div>
+          <mat-form-field floatLabel="never" appearance="legacy" color="accent">
+
+
+              <mat-label> Name</mat-label>
+
+              <input matInput required>
+              <mat-hint align="end">min 5 characters</mat-hint>
+
+            </mat-form-field>
+        </div>
+        <div>
+              <mat-form-field floatLabel="never" appearance="legacy" color="accent">
+
+
+                <mat-label> Address</mat-label>
+
+                <textarea matInput required></textarea>
+                <mat-hint align="end">min 30 characters</mat-hint>
+
+
+
+
+
+          </mat-form-field>
+        </div>
+          <div>
+            <mat-form-field floatLabel="never" appearance="legacy" color="accent">
+
+
+              <mat-label> Phone Number</mat-label>
+
+              <input matInput required>
+              <mat-hint align="end">min 10 characters</mat-hint>
+
+        </mat-form-field>
+         </div>
+         <div>
+           <button mat-raised-button matStepperNext>Proceed</button>
+         </div>
+      </mat-step>
+      <mat-step label="Billing Address">
+        <div>
+          <mat-form-field floatLabel="never" appearance="legacy" color="accent">
+
+
+              <mat-label> Name</mat-label>
+
+              <input matInput required>
+              <mat-hint align="end">min 5 characters</mat-hint>
+
+            </mat-form-field>
+        </div>
+        <div>
+              <mat-form-field floatLabel="never" appearance="legacy" color="accent">
+
+
+                <mat-label> Address</mat-label>
+
+                <textarea matInput required></textarea>
+                <mat-hint align="end">min 30 characters</mat-hint>
+
+
+
+
+
+          </mat-form-field>
+        </div>
+
+         <div>
+           <button mat-raised-button matStepperNext>Proceed</button>
+         </div>
+      </mat-step>
+      <mat-step label="Place Order">
+          <p>Order details</p>
+      </mat-step>
+  </mat-horizontal-stepper>
+  </div>
+</body>

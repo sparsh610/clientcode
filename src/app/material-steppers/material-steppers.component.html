@@ -1,0 +1,67 @@
+<div>
+<mat-horizontal-stepper>
+
+    <mat-step label="Shipping Address">
+        <p>Shiping Address Details</p>
+    </mat-step>
+    <mat-step label="Billing Address">
+<p> Billing Address Details</p>
+    </mat-step>
+    <mat-step label="Place Order">
+        <p>Order details</p>
+    </mat-step>
+
+</mat-horizontal-stepper>
+
+</div>
+
+<div>
+    <mat-horizontal-stepper>
+    
+        <mat-step label="Shipping Address">
+            <p>Shiping Address Details</p>
+            <div>
+                
+                <button mat-flat-button matStepperNext>Next</button>
+                
+                    </div>
+        </mat-step>
+        <mat-step label="Billing Address">
+    <p> Billing Address Details</p>
+    <div>
+<button mat-flat-button matStepperPrevious>Pevious</button>
+<button mat-flat-button matStepperNext>Next</button>
+
+    </div>
+        </mat-step>
+        <mat-step label="Place Order">
+            <p>Order details</p>
+            <div>
+                <button mat-flat-button matStepperPrevious>Pevious</button>
+                
+                
+                    </div>
+        </mat-step>
+    
+    </mat-horizontal-stepper>
+    
+    </div>
+
+    <div>
+        <mat-horizontal-stepper linear>
+        
+            <mat-step label="Shipping Address" completed="billingAddressFlag">
+                <p>Shiping Address Details</p>
+                <div><button mat-raised-button matStepperNext (click)="changeFlag()">Next</button></div>
+            </mat-step>
+            <mat-step label="Billing Address" completed="false">
+        <p> Billing Address Details</p>
+       
+            </mat-step>
+            <mat-step label="Place Order" completed=false>
+                <p>Order details</p>
+            </mat-step>
+        
+        </mat-horizontal-stepper>
+        
+        </div>

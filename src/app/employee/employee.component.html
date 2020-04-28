@@ -1,0 +1,21 @@
+<div class="col-md-6">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>name</th>
+      <th>designation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td><input type="text" [ngClass]="{'no-border': employee.isEditable}" [(ngModel)]=employee.employeename [disabled]=!employee.isEditable></td>
+            <td><input type="text" [ngClass]="{'no-border': employee.isEditable}" [(ngModel)]=employee.designation [disabled]=!employee.isEditable></td>
+            
+            <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete </button></td>
+            <td><button class="btn btn-danger" (click)="editEmployee(employee)" *ngIf=!employee.isEditable> Edit </button></td>
+            <td><button class="btn btn-danger" (click)="updateEmployee(employee)" *ngIf=employee.isEditable> Update </button></td>
+            </tr>
+    </tbody>
+      </table>
+  
+    </div>

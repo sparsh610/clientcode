@@ -1,0 +1,35 @@
+.container {
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 33vh 33vh 33vh;
+  grid-gap: 10px;;
+}
+
+.container-list {
+  padding: 20px;
+  margin: 20px;
+}
+
+.container-list button {
+
+  background-color: white;
+  color: blue;
+}
+
+body{
+  background: orange;
+  height: auto;
+}
+
+.container-list img:hover{
+  transform: scale(1.2);
+}
+.container-list img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border: double;
+}
+
+

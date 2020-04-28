@@ -1,0 +1,40 @@
+<div><button mat-button (click)="onClick()">Change Notification</button></div>
+
+<div>
+    <span [matBadge] = "matBadgeNumber" [matBadgeHidden]="hiddenBadge()">Notification</span>
+    </div>
+
+<div>
+<span matBadge="5" matBadgePosition="below before">Notification</span>
+</div>
+
+<div>
+<span matBadge="5" matBadgePosition="below after">Notification</span>
+</div>
+
+
+<div>
+<span matBadge="5" matBadgePosition>="above before">Notification</span>
+</div>
+
+<div>
+    <span matBadge="5" matBadgePosition="below before" matBadgesize="medium">Notification</span>
+    </div>
+
+    <div>
+    <span matBadge="5" matBadgePosition="below after" matBadgesize="small">Notification</span>
+    </div>
+
+
+    <div>
+    <span matBadge="5" matBadgePosition="above before" matBadgesize="large">Notification</span>
+    </div>
+
+    <div>
+        <span matBadge="5" matBadgePosition="above before" matBadgesize="large">Notification</span>
+        </div>
+
+
+    <div>
+        <span matBadge="5" matBadgePosition="above before" matBadgesize="large" matBadgeOverlap="false">Notification</span>
+        </div>
